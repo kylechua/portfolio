@@ -1,0 +1,88 @@
+body {
+    font-family: "Abel", sans-serif;
+    font-weight: bold;
+    background-color: #afceff;
+}
+
+#headerimg {
+    display: block;
+    margin: 0 auto;
+}
+
+.header {
+    padding-bottom: 10px;
+}
+
+.outercontainer {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+    color: white;
+}
+
+#content {
+    border-radius: 10px;
+}
+
+#christie>a, #christie>a:visited {
+    color: white;
+}
+
+#headshot {
+    width: 150px;
+    margin-top: 10px;
+    border: solid #afceff 2px;
+    border-radius: 15px;
+}
+
+#projects {
+    background-image: url("../images/papertexture.png");
+}
+
+#projectscontainer {
+    margin-top: 0px;
+    margin-left: 33px;
+    height: 450px;
+    overflow: scroll;   
+}
+
+.projDisplay>h4 {
+    margin-top: 15px;
+    margin-bottom: 4px;
+}
+.projDisplay>li {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    margin-left: 25px;
+    line-height: 140%;
+}
+
+.contentDisplay {
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.form-row {
+    padding-top: 8px;
+}
+.form-element>span {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.card {
+    padding-top: 10px;
+}

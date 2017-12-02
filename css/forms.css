@@ -1,0 +1,53 @@
+/*
+ * Author: Alexander Kyle Chua
+ * I wrote this css class using a tutorial I found online which
+ * used ULs in a table-like format, and adapted it to using forms/divs
+*/
+
+/* clear float after every row */
+.form-row:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* float each form element left */
+.form-element { float: left; }
+.form-element>label { float: left; }
+
+/* 1 element in row */
+.form-element:first-child:nth-last-child(1) {
+    width:Calc(100%/1);
+}
+/* 2 elements in row */
+.form-element:first-child:nth-last-child(2),
+.form-element:first-child:nth-last-child(2) ~ .form-element {
+    width:Calc(100%/2);
+}
+/* 3 elements in row */
+.form-element:first-child:nth-last-child(3),
+.form-element:first-child:nth-last-child(3) ~ .form-element {
+    width:Calc(100%/3);
+}
+/* 4 elements in row */
+.form-element:first-child:nth-last-child(4),
+.form-element:first-child:nth-last-child(4) ~ .form-element {
+    width:Calc(100%/4);
+}
+
+/* elements with multiple columns */
+.col { float: left; }
+.col:first-child:nth-last-child(2),
+.col:first-child:nth-last-child(2) ~ .col {
+    width:Calc(100%/2);
+}
+
+/* container for form fields */
+.form-element>span {
+    display: block;
+    overflow: hidden;
+}
+
+/* make form fields cover the rest of the whitespace */
+.form-element>span>input { width: 100%; }
+.form-element>span>select { width: 100%; }
